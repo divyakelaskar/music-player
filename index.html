@@ -12,19 +12,33 @@
 </head>
 <body>
 
-    <h1>Music Player
-
-    </h1>
+    <h1>Music Player</h1>
     
-    <div class="music-container">
+    <div class="music-container" id="music-container">
         <div class="music-info">
-            <h4 id="title">Ukulele</h4>
+            <h4 id="title">Hey</h4>
             <div class="progress-container">
                 <div class="progress"></div>
             </div>
         </div>
 
+        <audio src="music/hey.mp3"></audio>
 
+        <div class="img-container">
+            <img src="images/hey.jpg" alt="music-cover" id="cover">
+        </div>
+        
+        <div class="navigation">
+            <button id="prev" class="action-btn">
+                <i class="fas fa-backward"></i>
+            </button>
+            <button id="play" class="action-btn action-btn-big">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="next" class="action-btn">
+                <i class="fas fa-forward"></i>
+            </button> 
+        </div>
     </div>
 
     <script src="./app.js"></script>
