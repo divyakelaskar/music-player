@@ -8,3 +8,16 @@ const progress = document.getElementById('progress');
 const progressContainer = document.getElementById('progress-container');
 const title = document.getElementById('title');
 const cover = document.getElementById('cover');
+
+
+const songs = ['hey', 'summer', 'ukulele'];
+
+let songIndex = 2;
+
+loadSong(songs[songIndex]);
+
+function loadSong(song) {
+  title.innerText = song;
+  audio.src = `music/${song}.mp3`;
+  cover.src = `images/${song}.jpg`;
+}
